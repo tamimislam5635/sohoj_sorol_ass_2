@@ -310,6 +310,72 @@ nav ul li a {
   height: 100%;
 }
 
+
+
+
+/*  Newsletter Section  */
+.newsletter-section {
+  background-image: url('../assets/news-letter-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-top: 100px;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-content {
+  text-align: center;
+  padding: 50px 30px;
+  border-radius: 10px;
+  max-width: 850px;
+  width: 100%;
+  
+}
+
+.newsletter-content h2 {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 14px 18px;
+  border: none;
+
+  flex: 1;
+  min-width: 250px;
+  font-size: 17px;
+  outline: none;
+}
+
+.newsletter-form button {
+  padding: 14px 25px;
+  border: none;
+  background-color: #E95A08;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  white-space: nowrap;
+}
+
+/* Hover */
+.newsletter-form button:hover {
+  background-color: #ff6a00;
+}
+
 /* Responsive Styles */
 @media (max-width: 567px) {
   nav {
@@ -440,8 +506,39 @@ nav ul li a {
     cursor: pointer;
     font-size: 16px;
   }
-}
+/* from */
+   .newsletter-section {
+    padding: 50px 10px;
+    margin-top: 60px;
+  }
 
+  .newsletter-content {
+    padding: 30px 15px;
+    max-width: 100%;
+  }
+
+  .newsletter-content h2 {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  .newsletter-form {
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+   .newsletter-form input[type="email"] {
+    flex: 1;
+    font-size: 15px;
+    padding: 12px 14px;
+    min-width: 0;
+  }
+
+  .newsletter-form button {
+    font-size: 14px;
+    padding: 12px 14px;
+    width: auto;
+  }
 @media (min-width: 769px) {
   .photo-left .offer-box {
     height: calc((100% - 20px) / 2);
@@ -454,4 +551,5 @@ nav ul li a {
   .photo-offer-layout {
     height: 500px;
   }
+}
 }
