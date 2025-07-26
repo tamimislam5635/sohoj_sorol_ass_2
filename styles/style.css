@@ -310,9 +310,6 @@ nav ul li a {
   height: 100%;
 }
 
-
-
-
 /*  Newsletter Section  */
 .newsletter-section {
   background-image: url('../assets/news-letter-bg.png');
@@ -374,6 +371,63 @@ nav ul li a {
 /* Hover */
 .newsletter-form button:hover {
   background-color: #ff6a00;
+}
+/* footer */
+.footer {
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1 1 250px;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #252432;
+}
+
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 30px 60px; 
+  font-size: 14px;
+  color: #555;
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
 }
 
 /* Responsive Styles */
@@ -539,17 +593,58 @@ nav ul li a {
     padding: 12px 14px;
     width: auto;
   }
-@media (min-width: 769px) {
+  /* footer*/
+
+   .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .language-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    flex: 1 1 100%;
+  }
+}
+@media (min-width: 768px) {
+  .photo-offer-layout {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    height: 400px; 
+    flex-wrap: nowrap;
+  }
+
+  .photo-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    flex: 1;
+    max-width: 40%;
+    height: 100%;
+  }
+
   .photo-left .offer-box {
-    height: calc((100% - 20px) / 2);
+    height: 50%; 
+  }
+
+  .photo-right {
+    flex: 1;
+    max-width: 60%;
+    height: 100%;
+    display: flex;
   }
 
   .photo-right .offer-box {
     height: 100%;
+    width: 100%;
   }
-
-  .photo-offer-layout {
-    height: 500px;
-  }
-}
 }
